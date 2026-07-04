@@ -24,9 +24,9 @@ High revenue does not guarantee high profit. This project analyses **1,500 order
 
 ## 🖥️ Dashboard
 
-| Page 1 | Page 2 |
-|--------|--------|
-| ![Dashboard Page 1](dashboard/sales_overview.png) | ![Dashboard Page 2](dashboard/Screenshot%20(370).png) |
+![Dashboard Page 1](images/dashboard_page1.png)
+
+![Dashboard Page 2](images/dashboard_page2.png)
 
 ---
 
