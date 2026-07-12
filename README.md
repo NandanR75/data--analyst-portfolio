@@ -91,7 +91,6 @@ data-analyst-portfolio/
 │   └── business_analytics_queries.sql
 │
 └── 📄 README.md
-```
 
 ```
 
