@@ -1,6 +1,6 @@
 # 📊 Data Analyst Portfolio
 
-An end-to-end data analytics and business intelligence project utilizing **Python** and **Power BI** to optimize regional dealership performance, track sales volume, and analyze purchasing trends.
+Welcome to my Data Analyst Portfolio. This repository showcases end-to-end data analytics projects demonstrating my skills in SQL, Python, Power BI, and Excel. Each project focuses on solving real-world business problems through data cleaning, analysis, visualization, and business intelligence.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow?logo=powerbi)
@@ -17,10 +17,14 @@ Automotive dealership executives need clear, real-time insights to understand re
 ---
 
 ## 📸 Dashboard Preview
-
+## Project 1
+   Car Sales Dashboard
 ![Car Sales Dashboard](images/car_sales_dashboard.png)
 ![Attrition and Demographics](images/attrition.png)
 ![Demographics and Brand Performance](images/demographics_brand_performance.png)
+
+## Project 2
+   E-commerce Sales Overview
 ![Ecommerce_Sales_Overview](images/ecommerce_sales_overview.png)
 ![Ecommerce_Behavioral_Insights.png](images/ecommerce_behavioral_insights.png)
  
@@ -285,6 +289,6 @@ Open `ecommerce.pbix` in Power BI Desktop. If prompted, update data source paths
 Computer Science graduate passionate about Data Analytics with hands-on experience in SQL, Python, Power BI, Excel, and business intelligence. This repository showcases projects demonstrating data cleaning, exploratory data analysis, dashboard development, and business insights.
 💼 LinkedIn: Nandan R
 📧 Email: nandanr121995@gmail.com
-🐙 GitHub: NandanR75
+🐙 GitHub: https://linkedin.com/in/nandan-r-010564224
 
 
