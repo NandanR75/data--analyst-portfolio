@@ -7,6 +7,13 @@ Welcome to my Data Analyst Portfolio. This repository showcases end-to-end data 
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green?logo=pandas)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
+## 👨‍💻 About Me
+
+Computer Science graduate passionate about Data Analytics with hands-on experience in SQL, Python, Power BI, Excel, and business intelligence. This repository showcases projects demonstrating data cleaning, exploratory data analysis, dashboard development, and business insights.
+💼 LinkedIn: https://linkedin.com/in/nandan-r-010564224
+📧 Email: nandanr121995@gmail.com
+🐙 GitHub: https://github.com/NandanR75
+
 ---
 ## 🚗 Project 1: Car Sales Dashboard
 
@@ -17,16 +24,14 @@ Automotive dealership executives need clear, real-time insights to understand re
 ---
 
 ## 📸 Dashboard Preview
-## Project 1
-   Car Sales Dashboard
-![Car Sales Dashboard](images/car_sales_dashboard.png)
-![Attrition and Demographics](images/attrition.png)
-![Demographics and Brand Performance](images/demographics_brand_performance.png)
+## Project 1: Car Sales Dashboard
+   ![Car Sales Dashboard](images/car_sales_dashboard.png)
+   ![Attrition and Demographics](images/attrition.png)
+   ![Demographics and Brand Performance](images/demographics_brand_performance.png)
 
-## Project 2
-   E-commerce Sales Overview
-![Ecommerce_Sales_Overview](images/ecommerce_sales_overview.png)
-![Ecommerce_Behavioral_Insights.png](images/ecommerce_behavioral_insights.png)
+## Project 2: E-commerce Sales Analysis
+ ![Ecommerce_Sales_Overview](images/ecommerce_sales_overview.png)
+ ![Ecommerce_Behavioral_Insights.png](images/ecommerce_behavioral_insights.png)
  
 
 ---
@@ -283,12 +288,6 @@ Open `ecommerce.pbix` in Power BI Desktop. If prompted, update data source paths
 | 🟢 Low | Rajasthan: top-6 revenue, negative margin | Investigate local pricing or high-return product mix |
 | 🟢 Low | Kerala & Gujarat: highest margins, underinvested | Expand marketing in high-efficiency states |
 
----
-## 👨‍💻 About Me
 
-Computer Science graduate passionate about Data Analytics with hands-on experience in SQL, Python, Power BI, Excel, and business intelligence. This repository showcases projects demonstrating data cleaning, exploratory data analysis, dashboard development, and business insights.
-💼 LinkedIn: Nandan R
-📧 Email: nandanr121995@gmail.com
-🐙 GitHub: https://linkedin.com/in/nandan-r-010564224
 
 
