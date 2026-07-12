@@ -64,12 +64,15 @@ Automotive dealership executives need clear, real-time insights to understand re
 
 ---
 ## 📁 Repository Structure
+
+```text
 data-analyst-portfolio/
 │
+├── 📄 README.md
 ├── 📂 datasets/
 │   ├── Car_Sales_Cleaned.csv
-│   ├── Orders.csv
-│   └── Details.csv
+│   ├── Details.csv
+│   └── Orders.csv
 │
 ├── 📂 images/
 │   ├── car_sales_dashboard.png
@@ -88,11 +91,10 @@ data-analyst-portfolio/
 ├── 📂 scripts/
 │   └── data_preprocessing.py
 │
-├── 📂 sql/
-│   ├── car_sales_analysis.sql
-│   └── business_analytics_queries.sql
-│
-└── 📄 README.md
+└── 📂 sql/
+    ├── car_sales_analysis.sql
+    └── business_analytics_queries.sql
+
 
 ```
 
