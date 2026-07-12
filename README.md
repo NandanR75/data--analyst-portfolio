@@ -27,7 +27,9 @@ Computer Science graduate passionate about Data Analytics with hands-on experien
 - Business Analytics
 
 💼 LinkedIn: https://linkedin.com/in/nandan-r-010564224
+
 📧 Email: nandanr121995@gmail.com
+
 🐙 GitHub: https://github.com/NandanR75
 
 ---
