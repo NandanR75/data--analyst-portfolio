@@ -8,6 +8,7 @@ An end-to-end data analytics and business intelligence project utilizing **Pytho
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
+## 🚗 Project 1: Car Sales Dashboard
 
 ## 📋 Project Overview & Problem Statement
 
@@ -67,7 +68,7 @@ Ecommerce-Customer-Behavior-Analysis/
 
 ```
 
-📊 Dataset Overview
+## 📊 Dataset Overview
 
 - **Rows:** 23,664 transactions
 - **Columns:** 20 features
