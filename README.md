@@ -140,7 +140,7 @@ High revenue does not guarantee high profit. This project analyses **1,500 order
 
 | Page 1 | Page 2 |
 |--------|--------|
-| ![Dashboard Page 1](dashboard/sales_overview.png) | ![Dashboard Page 2](dashboard/Screenshot%20(370).png) |
+| ![Ecommerce_Sales_Overview](images/ecommerce_sales_overview.png) | ![Ecommerce_Behavioral_Insights.png](images/ecommerce_behavioral_insights.png) |
 
 ---
 
