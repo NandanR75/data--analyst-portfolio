@@ -1,0 +1,7 @@
+OrderID,Date,Region,Product,Sales,Profit
+1,2024-01-01,North,A,100,20
+2,2024-01-02,South,B,200,50
+3,2024-01-03,East,A,150,30
+4,2024-01-04,West,C,300,80
+5,2024-01-05,North,B,250,60
+6,2024-01-06,East,C,400,120

@@ -1,0 +1,7 @@
+Column,Type,Description
+OrderID,int64,Unique order identifier
+Date,object,Order date
+Region,object,Sales region
+Product,object,Product name/category
+Sales,int64,Sales amount
+Profit,int64,Profit amount
