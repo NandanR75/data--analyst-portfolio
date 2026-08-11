@@ -1,70 +1,70 @@
 """
 data_preprocessing.py
-Cleans, merges, and feature-engineers Orders.csv + Details.csv
-into a single analysis-ready file: Cleaned_Merged.csv
+Cleans and feature-engineers HR_Analytics.csv into analysis-ready form.
 
 Usage (from Python_Scripts/):
     python data_preprocessing.py
+Output:
+    ../HR_Analytics_Cleaned.csv
 """
 
 import pandas as pd
 import numpy as np
 import os
 
-def preprocess(orders_path="../Orders.csv", details_path="../Details.csv",
-               out_path="../Cleaned_Merged.csv"):
+def preprocess(in_path="../HR_Analytics.csv", out_path="../HR_Analytics_Cleaned.csv"):
 
     print("── Loading ───────────────────────────────────────────")
-    if not os.path.exists(orders_path) or not os.path.exists(details_path):
-        raise FileNotFoundError("Orders.csv or Details.csv not found.")
+    if not os.path.exists(in_path):
+        raise FileNotFoundError(f"{in_path} not found. Run from Python_Scripts/.")
 
-    orders  = pd.read_csv(orders_path)
-    details = pd.read_csv(details_path)
-    print(f"  Orders  : {orders.shape}  |  Details : {details.shape}")
+    df = pd.read_csv(in_path)
+    print(f"  Raw shape : {df.shape}")
 
-    # 1. Strip whitespace
-    for col in orders.select_dtypes('object'):
-        orders[col] = orders[col].str.strip()
-    for col in details.select_dtypes('object'):
-        details[col] = details[col].str.strip()
+    # 1. Strip string whitespace
+    for col in df.select_dtypes('object'):
+        df[col] = df[col].str.strip()
 
-    # 2. Parse date
-    orders['Order Date'] = pd.to_datetime(orders['Order Date'], format='%d-%m-%Y')
+    # 2. Drop constant / redundant columns
+    constant_cols = [c for c in df.columns if df[c].nunique() <= 1]
+    df.drop(columns=constant_cols, inplace=True)
+    print(f"  Dropped constant columns : {constant_cols}")
 
-    # 3. Drop missing primary keys
-    before = len(orders)
-    orders.dropna(subset=['Order ID'], inplace=True)
-    details.dropna(subset=['Order ID'], inplace=True)
-    print(f"  Dropped {before - len(orders)} orders with null Order ID")
+    # 3. Handle missing values
+    missing_before = df.isnull().sum().sum()
+    df['YearsWithCurrManager'].fillna(df['YearsWithCurrManager'].median(), inplace=True)
+    print(f"  Filled {missing_before} missing values (YearsWithCurrManager → median)")
 
-    # 4. Remove duplicates
-    before = len(details)
-    details.drop_duplicates(inplace=True)
-    print(f"  Removed {before - len(details)} duplicate detail rows")
+    # 4. Attrition binary flag
+    df['Attrition_Flag'] = (df['Attrition'] == 'Yes').astype(int)
 
-    # 5. Merge
-    df = orders.merge(details, on='Order ID', how='inner')
-    print(f"  Merged  : {df.shape}")
+    # 5. Composite satisfaction score
+    df['Satisfaction_Score'] = df[['JobSatisfaction','EnvironmentSatisfaction',
+                                     'WorkLifeBalance','RelationshipSatisfaction']].mean(axis=1).round(2)
 
-    # 6. Feature engineering
-    df['Month']      = df['Order Date'].dt.month
-    df['Month_Name'] = df['Order Date'].dt.strftime('%b')
-    df['Quarter']    = df['Order Date'].dt.quarter.map({1:'Q1',2:'Q2',3:'Q3',4:'Q4'})
-    df['Is_Profit']  = (df['Profit'] > 0).astype(int)
-    df['Margin_Pct'] = (df['Profit'] / df['Amount'].replace(0, np.nan) * 100).round(2)
+    # 6. Tenure band
+    df['Tenure_Band'] = pd.cut(df['YearsAtCompany'],
+                                 bins=[-1,2,5,10,20,100],
+                                 labels=['0-2 yrs','3-5 yrs','6-10 yrs','11-20 yrs','20+ yrs'])
 
-    order_total      = df.groupby('Order ID')['Amount'].sum().rename('Order_Total')
-    df               = df.merge(order_total, on='Order ID')
+    # 7. Income band
+    df['Income_Band'] = pd.cut(df['MonthlyIncome'],
+                                 bins=[0,3000,6000,10000,20000],
+                                 labels=['Low','Mid','High','Very High'])
 
-    # 7. Validation report
+    # 8. Promotion recency flag
+    df['No_Recent_Promotion'] = (df['YearsSinceLastPromotion'] >= 3).astype(int)
+
+    # 9. Validation
     print("\n── Validation ────────────────────────────────────────")
-    print(f"  Nulls remaining   : {df.isnull().sum().sum()}")
-    print(f"  Loss-making rows  : {(df['Profit']<0).sum()} ({(df['Profit']<0).mean()*100:.1f}%)")
-    print(f"  Total Revenue     : ₹{df['Amount'].sum():,}")
-    print(f"  Total Profit      : ₹{df['Profit'].sum():,}")
-    print(f"  Overall Margin    : {df['Profit'].sum()/df['Amount'].sum()*100:.2f}%")
+    print(f"  Final shape         : {df.shape}")
+    print(f"  Nulls remaining     : {df.isnull().sum().sum()}")
+    print(f"  Total employees     : {len(df):,}")
+    print(f"  Attrition count     : {df['Attrition_Flag'].sum()} ({df['Attrition_Flag'].mean()*100:.1f}%)")
+    print(f"  Avg monthly income  : ${df['MonthlyIncome'].mean():,.0f}")
+    print(f"  Overtime workers    : {(df['OverTime']=='Yes').mean()*100:.1f}%")
 
-    df.to_csv(out_path, index=False, date_format='%Y-%m-%d')
+    df.to_csv(out_path, index=False)
     print(f"\n✅  Saved → {out_path}  ({df.shape[0]:,} rows × {df.shape[1]} cols)")
     return df
 
