@@ -244,6 +244,104 @@ High revenue does not guarantee high profit. This project analyses **1,500 order
 
 ---
 
+# 🛒 Project 3: Retail-Sales-Growth-Analysis
+
+Developed an interactive Power BI dashboard to analyze retail sales and profitability across products, regions, and dates. Used Power Query for data preparation, DAX to create KPIs such as Total Sales, Total Profit, Profit Margin and Order Count, and SQL queries for regional, product-level and time-based analysis. The project demonstrates the end-to-end workflow of data preparation, analysis, KPI creation and dashboard visualization.
+
+---
+
+## 📊 Dataset
+| OrderID | Date       | Region | Product | Sales | Profit |
+| ------- | ---------- | ------ | ------- | ----: | -----: |
+| O001    | 2024-01-05 | North  | Laptop  | 75000 |  12000 |
+| O002    | 2024-01-08 | South  | Mobile  | 45000 |   9000 |
+| O003    | 2024-01-12 | East   | Tablet  | 30000 |   6000 |
+| O004    | 2024-01-15 | West   | Laptop  | 80000 |  15000 |
+| O005    | 2024-01-20 | North  | Mobile  | 50000 |  10000 |
+| O006    | 2024-01-25 | South  | Tablet  | 35000 |   7000 |
+
+---
+## 🔑 Key Findings
+
+| Finding                            | Details                                                                         | Business Interpretation                                                          |
+| ---------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| **Total Sales**                    | **₹3,15,000** across 6 orders                                                   | Represents the total revenue generated in the sample dataset                     |
+| **Total Profit**                   | **₹59,000**                                                                     | Indicates the total profit generated from the sales                              |
+| **Overall Profit Margin**          | **18.73%**                                                                      | For every ₹100 of sales, approximately ₹18.73 was profit                         |
+| **Top Region by Sales**            | **North – ₹1,25,000**                                                           | North contributed the highest sales among the regions                            |
+| **Top Region by Profit**           | **North – ₹22,000**                                                             | North also generated the highest absolute profit                                 |
+| **Highest Regional Profit Margin** | **South & East – 20%**                                                          | These regions had the strongest profitability relative to their sales            |
+| **Top Product by Sales**           | **Laptop – ₹1,55,000**                                                          | Laptop generated the highest revenue                                             |
+| **Top Product by Profit**          | **Laptop – ₹27,000**                                                            | Laptop also generated the highest absolute profit                                |
+| **Mobile Performance**             | **₹95,000 sales; ₹19,000 profit**                                               | Mobile was the second-highest product by sales and profit                        |
+| **Tablet Performance**             | **₹65,000 sales; ₹13,000 profit**                                               | Tablet had the lowest sales and profit among the three products                  |
+| **Orders**                         | **6 unique orders**                                                             | The analysis is based on a small sample dataset                                  |
+
+
+| **Key Business Insight**           | North had the highest sales/profit, while South and East had the highest margin | High sales volume and high profitability percentage are not necessarily the same |
+
+---
+
+## 🛠️ Tech Stack
+| Technology       | Purpose                                                     |
+| ---------------- | ----------------------------------------------------------- |
+| **Power BI**     | Dashboard creation, visualization and interactive reporting |
+| **Power Query**  | Data cleaning, transformation and preparation               |
+| **DAX**          | KPI and calculated measure creation                         |
+| **SQL**          | Data querying, aggregation and analysis                     |
+| **CSV**          | Source dataset                                              |
+| **Git & GitHub** | Project version control and portfolio hosting               |
+
+
+# 🛒 Project 4: hr-analytics
+
+Analyzed 1,480 employee records to identify key factors associated with employee attrition. Used Python for data preprocessing, EDA and statistical testing, SQL for 20 analytical queries covering workforce, demographics, compensation, work patterns and satisfaction, and Power BI/DAX to build an interactive HR dashboard. Key findings included higher attrition among sales representatives, overtime employees, younger employees and entry-level employees, along with significant differences in compensation and satisfaction between employees who left and those who stayed.
+
+## 📊 Dataset
+| Column                      | Type             | Description                              |
+| --------------------------- | ---------------- | ---------------------------------------- |
+| **Attrition**               | String           | Whether the employee left: Yes/No        |
+| **Age / AgeGroup**          | Integer / String | Employee age and age category            |
+| **Department**              | String           | Sales, R&D, HR                           |
+| **JobRole**                 | String           | Employee's job role                      |
+| **MonthlyIncome**           | Integer          | Monthly salary                           |
+| **SalarySlab**              | String           | Salary range                             |
+| **JobSatisfaction**         | Integer          | Satisfaction level from 1–4              |
+| **EnvironmentSatisfaction** | Integer          | Workplace environment satisfaction, 1–4  |
+| **WorkLifeBalance**         | Integer          | Work-life balance rating, 1–4            |
+| **OverTime**                | String           | Whether employee works overtime          |
+| **BusinessTravel**          | String           | Travel frequency                         |
+| **YearsAtCompany**          | Integer          | Years employee has worked at the company |
+| **JobLevel**                | Integer          | Employee level, 1–5                      |
+| **MaritalStatus**           | String           | Single, Married or Divorced              |
+
+## 🔑 Key Findings
+| Finding                            |           Result | Interpretation                                                  |
+| ---------------------------------- | ---------------: | --------------------------------------------------------------- |
+| **Overall Attrition**              |        **16.1%** | 238 of 1,480 employees left                                     |
+| **Sales Representative Attrition** |        **39.3%** | Highest attrition among the roles analyzed                      |
+| **Overtime Attrition**             |        **30.6%** | Much higher than the 10.4% rate among non-overtime employees    |
+| **Age 18–25 Attrition**            |        **35.8%** | More than one-third of employees in this group left             |
+| **Salary Difference**              | **$2,016/month** | Employees who left earned $4,813 vs $6,829 for those who stayed |
+| **Job Level 1 Attrition**          |        **26.2%** | Entry-level employees showed elevated attrition                 |
+| **Single Employees**               |        **25.4%** | Higher attrition than divorced employees at 10.4%               |
+| **Job Involvement**                | Strong predictor | Lower involvement was strongly associated with attrition        |
+
+## 🛠️ Tech Stack
+| Technology            | Purpose                                          |
+| --------------------- | ------------------------------------------------ |
+| **Python**            | Data preprocessing and exploratory data analysis |
+| **Pandas**            | Data manipulation and cleaning                   |
+| **Matplotlib**        | Data visualization                               |
+| **Seaborn**           | Statistical/data visualization                   |
+| **SciPy**             | Statistical hypothesis testing                   |
+| **SQL**               | HR analytics and business queries                |
+| **DuckDB / MySQL 8+** | SQL execution                                    |
+| **Power BI**          | Interactive dashboard                            |
+| **DAX**               | Power BI calculations                            |
+| **Git/GitHub**        | Project version control and portfolio            |
+
+
 ## 🚀 How to Run
 
 ### Python EDA Notebook
