@@ -72,7 +72,11 @@ data-analyst-portfolio/
 ├── 📂 datasets/
 │   ├── Car_Sales_Cleaned.csv
 │   ├── Details.csv
-│   └── Orders.csv
+│   ├── Orders.csv
+│   ├── data_dictionary.csv
+│   ├── sales_data.csv
+│   ├── HR_Analytics .csv
+
 │
 ├── 📂 images/
 │   ├── car_sales_dashboard.png
@@ -80,9 +84,11 @@ data-analyst-portfolio/
 │   ├── ecommerce_behavioral_insights.png
 │   ├── attrition.png
 │   └── demographics_brand_performance.png
+    └── dashboard.png(retail)
 │
 ├── 📂 notebooks/
 │   └── EDA_analysis.ipynb
+    └── EDA_analysis.ipynb(retail)
 │
 ├── 📂 powerbi/
 │   ├── car_sales_dashboard.pbix
@@ -90,10 +96,14 @@ data-analyst-portfolio/
 │
 ├── 📂 scripts/
 │   └── data_preprocessing.py
+        data_preprocessing.py(hr analytics)
 │
 └── 📂 sql/
     ├── car_sales_analysis.sql
     └── business_analytics_queries.sql
+    └─  hr_attrition_queries.sql
+    └── sql_analysis.sql(retail)
+
 
 
 ```
