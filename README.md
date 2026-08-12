@@ -1,445 +1,145 @@
 # 📊 Data Analyst Portfolio
 
-Welcome to my Data Analyst Portfolio. This repository showcases end-to-end data analytics projects demonstrating my skills in SQL, Python, Power BI, and Excel. Each project focuses on solving real-world business problems through data cleaning, analysis, visualization, and business intelligence.
+Welcome to my **Data Analyst Portfolio**.
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow?logo=powerbi)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green?logo=pandas)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+This repository showcases end-to-end data analytics projects using **SQL, Python, Power BI and Excel**, covering data cleaning, exploratory analysis, business analysis, dashboard development and insight generation.
 
 ## 👨‍💻 About Me
 
-Computer Science graduate passionate about Data Analytics with hands-on experience in SQL, Python, Power BI, Excel, and business intelligence. This repository showcases projects demonstrating data cleaning, exploratory data analysis, dashboard development, and business insights.
+I am a **Computer Science graduate** with hands-on experience in data analysis, data validation and reporting.
 
+My portfolio demonstrates my ability to:
 
-**Skills**
+* Clean and transform datasets
+* Perform exploratory data analysis
+* Write analytical SQL queries
+* Build Power BI dashboards
+* Create KPIs and business metrics
+* Identify trends and patterns
+* Translate data into business insights
 
-- SQL
-- Python
-- Pandas
-- NumPy
-- Power BI
-- Microsoft Excel
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Data Visualization
-- Dashboard Development
-- Business Analytics
+## 🛠️ Skills
 
-💼 LinkedIn: https://linkedin.com/in/nandan-r-010564224
+**Data Analysis:**
+SQL, Python, Pandas, NumPy, Excel, Data Cleaning, EDA
 
-📧 Email: nandanr121995@gmail.com
+**Visualization & BI:**
+Power BI, DAX, Power Query, Data Visualization, Dashboard Development
 
-🐙 GitHub: https://github.com/NandanR75
+**Tools:**
+Jupyter Notebook, Git, GitHub
 
----
-## 🚗 Project 1: Car Sales Dashboard
+## 📂 Featured Projects
 
-## 📋 Project Overview & Problem Statement
+### 🚗 1. Car Sales Dashboard
 
-Automotive dealership executives need clear, real-time insights to understand regional consumer demand, optimize vehicle distribution, and maximize top-line revenue. This project analyzes **23,664 vehicle transactions (2022–2023)** to uncover critical factors driving sales across car body styles, regional markets, transmission types, and customer segments.
+**Tools:** SQL | Python | Pandas | Power BI | Excel
 
----
+Analyzed **23,664 vehicle transactions** from 2022–2023 to understand sales performance across brands, regions, body styles, transmission types and customer segments.
 
-## 📸 Dashboard Preview
-## Car Sales Dashboard
-   ![Car Sales Dashboard](images/car_sales_dashboard.png)
-   ![Attrition and Demographics](images/attrition.png)
-   ![Demographics and Brand Performance](images/demographics_brand_performance.png)
+**Key Highlights:**
 
-## E-commerce Sales Analysis
-   ![Ecommerce_Sales_Overview](images/ecommerce_sales_overview.png)
-   ![Ecommerce_Behavioral_Insights.png](images/ecommerce_behavioral_insights.png)
- 
+* Analyzed ₹651.5M+ in sales revenue
+* Identified top-performing brands and dealership regions
+* Analyzed vehicle body styles and transmission preferences
+* Built an interactive Power BI dashboard
+* Performed data cleaning, EDA and SQL analysis
 
----
-
-## 🛠 Tools Used
-
-- SQL
-- Python
-- Pandas
-- Power BI
-- Excel
-
----
-## 📁 Repository Structure
-
-```text
-data-analyst-portfolio/
-│
-├── 📄 README.md
-├── 📂 datasets/
-│   ├── Car_Sales_Cleaned.csv
-│   ├── Details.csv
-│   ├── Orders.csv
-│   ├── data_dictionary.csv
-│   ├── sales_data.csv
-│   ├── HR_Analytics .csv
-
-│
-├── 📂 images/
-│   ├── car_sales_dashboard.png
-│   ├── ecommerce_sales_overview.png
-│   ├── ecommerce_behavioral_insights.png
-│   ├── attrition.png
-│   └── demographics_brand_performance.png
-    └── dashboard.png(retail)
-│
-├── 📂 notebooks/
-│   └── EDA_analysis.ipynb
-    └── EDA_analysis.ipynb(retail)
-│
-├── 📂 powerbi/
-│   ├── car_sales_dashboard.pbix
-│   └── ecommerce.pbix
-│
-├── 📂 scripts/
-│   └── data_preprocessing.py
-        data_preprocessing.py(hr analytics)
-│
-└── 📂 sql/
-    ├── car_sales_analysis.sql
-    └── business_analytics_queries.sql
-    └─  hr_attrition_queries.sql
-    └── sql_analysis.sql(retail)
-
-
-
-```
-
-## 📊 Dataset Overview
-
-- **Rows:** 23,664 transactions
-- **Columns:** 20 features
-- **Date Range:** January 2022 – December 2023
-- **Price Range:** $1,200 – $75,400
-- **Brands Covered:** 30 manufacturers (Ford, Toyota, BMW, Dodge, Cadillac, and more)
-- **Regions:** 7 dealership regions (Austin, Janesville, Scottsdale, Aurora, Greenville, Pasco, Middletown)
-
-### Dataset Preview
-
-| Car_id | Date | Customer_Name | Gender | Annual_Income | Company | Model | Price |
-|:---|:---|:---|:---|:---|:---|:---|:---|
-| C_CND_000001 | 2022-01-02 | Geraldine | Male | $13,500 | Ford | Expedition | $26,000 |
-| C_CND_000002 | 2022-01-02 | Gia | Male | $1,480,000 | Dodge | Durango | $19,000 |
-| C_CND_000003 | 2022-01-02 | Gianna | Male | $1,035,000 | Cadillac | Eldorado | $31,500 |
+🔗 **Project:**
+https://github.com/NandanR75/car-sales-dashboard-project
 
 ---
 
-## 📖 Data Dictionary
+### 🛒 2. E-Commerce Sales & Customer Behaviour Analysis
 
-| Column Name | Data Type | Description |
-|:---|:---|:---|
-| **Car_id** | String | Unique identifier for each car sale transaction |
-| **Date** | Date | Date when the vehicle transaction occurred |
-| **Customer_Name** | String | Name of the vehicle buyer |
-| **Gender** | String | Gender of the buyer |
-| **Annual_Income** | Integer | Customer's yearly income in USD |
-| **Dealer_Name** | String | Name of the dealership franchise |
-| **Company** | String | Car manufacturer / brand (e.g., Ford, Toyota) |
-| **Model** | String | Specific model name of the vehicle |
-| **Engine** | String | Engine architecture type (e.g., Overhead Camshaft) |
-| **Transmission** | String | Transmission type — Auto or Manual |
-| **Color** | String | Exterior color of the sold vehicle |
-| **Price** | Integer | Final sale price in USD |
-| **Body_Style** | String | Vehicle classification — SUV, Sedan, Hatchback, Hardtop, Passenger |
-| **Dealer_Region** | String | Geographic market location of the dealership |
-| **Price_Category** | String | Price tier — Low, Mid, or High |
-| **Affordability_Ratio** | Decimal | Price-to-income ratio for the buyer |
-| **Year** | Integer | Year of the transaction |
-| **Month** | Integer | Month number (1-12) |
-| **Month_Name** | String | Full month name |
-| **Income_Category** | String | Customer income bracket — Low, Mid, or High Income |
+**Tools:** Python | Pandas | SQL | Power BI | DAX | SciPy
 
----
-## 📊 Key Performance Indicators (KPIs)
+Analyzed **1,500 order line items across 500 orders** to understand profitability, customer behaviour, regional performance, payment methods and sales trends.
 
-- Total Sales Revenue: 651,550,154
-- Total Cars Sold: 23,664
-- Average Selling Price: 27,533.39
-- Top Selling Brand: Ford
-- Top Dealer Region: Austin
-- Unique Customers: 3,014
+**Key Highlights:**
 
-## 💡 Business Insights
+* Identified loss-making product sub-categories
+* Analyzed profitability by payment method
+* Examined monthly and quarterly sales trends
+* Analyzed customer retention and repeat purchases
+* Performed statistical hypothesis testing
+* Created an interactive Power BI dashboard
+* Developed analytical SQL queries using CTEs and window functions
 
-- Ford generated the highest sales revenue among all brands.
-- Austin was the top-performing dealer region by revenue.
-- SUVs were the most frequently sold body style with 6,318 sales.
-- Automatic transmission vehicles (12,553) slightly outsold manual vehicles (11,111).
-- Male customers accounted for the majority of purchases (18,630 compared to 5,034 female customers).
+🔗 **Project:**
+https://github.com/NandanR75/E-commerce-Customer-Behavior-Analysis
 
 ---
 
-# 🛒 Project 2: E-Commerce Sales & Customer Behaviour Analysis
+### 👥 3. HR Analytics — Employee Attrition Analysis
 
-An end-to-end data analytics project uncovering profitability drivers, seasonal patterns, regional demand, and customer retention insights for an Indian e-commerce platform.
+**Tools:** Python | Pandas | SQL | Power BI | DAX | SciPy
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-EDA-green?logo=pandas)
-![SciPy](https://img.shields.io/badge/SciPy-Statistics-orange)
-![SQL](https://img.shields.io/badge/SQL-20%20Queries-blueviolet?logo=postgresql)
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)
+Analyzed **1,480 employee records** to identify factors associated with employee attrition.
 
----
+**Key Highlights:**
 
-## 📋 Project Overview
+* Analyzed attrition by department and job role
+* Investigated the relationship between overtime and attrition
+* Analyzed salary, job level and employee satisfaction
+* Examined age, marital status and tenure
+* Performed statistical hypothesis testing
+* Developed analytical SQL queries
+* Built an interactive Power BI HR dashboard
 
-High revenue does not guarantee high profit. This project analyses **1,500 order line items across 500 orders (2018)** to answer five critical business questions:
-
-1. Which product sub-categories are destroying margin despite high volume?
-2. Which payment channels generate the most profit per transaction?
-3. Which months and quarters drive revenue — and which are loss-making?
-4. Which states and cities are the strongest markets?
-5. What share of customers are repeat buyers, and how much revenue risk does low retention create?
+🔗 **Project:**
+https://github.com/NandanR75/hr-analytics
 
 ---
 
-## 🔑 Key Findings
+### 📈 4. Retail Sales & Growth Analysis
 
-| Finding | Detail |
-|---------|--------|
-| **35.3% of line items are loss-making** | Losing ₹38,079 while gaining ₹75,042 — net profit only ₹36,963 (8.4% margin) |
-| **5 sub-categories are net-negative** | Electronic Games, Furnishings, Kurti, Skirt, Leggings destroy margin with every sale |
-| **Credit Card earns 14.5% margin vs UPI's 4.8%** | Statistically significant (t-test p = 0.0002) — payment channel mix drives profitability |
-| **Q3 is overall loss-making (−2% margin)** | July alone at −16.5% margin — the worst single month |
-| **Only 31.8% of customers repeat-purchase** | One-time buyers are 68.2% — retention is the largest untapped growth lever |
-| **Top customer by revenue is loss-making** | Harivansh: ₹9,902 revenue, −₹157 profit — optimising revenue alone is dangerous |
+**Tools:** Power BI | Power Query | DAX | SQL
 
----
+Built a Power BI dashboard to analyze retail sales and profitability across products, regions and dates.
 
-## 📊 Dataset
+**Key Highlights:**
 
-### Orders.csv (500 rows)
-| Column | Type | Description |
-|--------|------|-------------|
-| Order ID | String | Unique identifier |
-| Order Date | Date | DD-MM-YYYY |
-| CustomerName | String | Customer name |
-| State | String | 19 Indian states |
-| City | String | Delivery city |
+* Created Total Sales and Total Profit KPIs
+* Calculated Profit Margin and Order Count using DAX
+* Analyzed regional and product performance
+* Performed sales and profitability analysis using SQL
+* Created interactive Power BI visualizations
 
-### Details.csv (1,500 rows)
-| Column | Type | Description |
-|--------|------|-------------|
-| Order ID | String | FK → Orders |
-| Amount | Integer | Sale value (₹) |
-| Profit | Integer | Profit/loss — can be negative |
-| Quantity | Integer | Units sold |
-| Category | String | Electronics / Clothing / Furniture |
-| Sub-Category | String | 17 product types |
-| PaymentMode | String | COD / UPI / Debit Card / Credit Card / EMI |
+🔗 **Project:**
+https://github.com/NandanR75/retail-sales-growth-analysis
 
----
+> **Note:** This is a small portfolio dataset designed to demonstrate the end-to-end analytics workflow.
 
-## 🛠️ Tech Stack
+## 📊 What These Projects Demonstrate
 
-| Tool | Purpose |
-|------|---------|
-| Python — Pandas, Matplotlib, Seaborn | Data cleaning, EDA, 10+ visualisations |
-| SciPy | Statistical hypothesis testing (t-test, ANOVA, Pearson) |
-| SQL — DuckDB / MySQL 8+ | 20 analytical queries: window functions, CTEs, rolling averages |
-| Power BI + DAX | Interactive 2-page business intelligence dashboard |
+| Skill              | Demonstrated Through                                                   |
+| ------------------ | ---------------------------------------------------------------------- |
+| SQL                | Business analysis, aggregation, filtering, CTEs and analytical queries |
+| Python             | Data cleaning, EDA and statistical analysis                            |
+| Pandas             | Data manipulation and preprocessing                                    |
+| Power BI           | Interactive dashboards and business reporting                          |
+| DAX                | KPI and calculated measures                                            |
+| Power Query        | Data cleaning and transformation                                       |
+| Excel              | Data analysis and reporting                                            |
+| Data Visualization | Charts, KPIs and dashboard design                                      |
+| Business Analytics | Translating data into actionable insights                              |
 
----
+## 🎯 Analytics Workflow
 
-# 🛒 Project 3: Retail-Sales-Growth-Analysis
+**Raw Data → Data Cleaning → Data Validation → EDA → SQL Analysis → KPI Development → Visualization → Business Insights**
 
-Developed an interactive Power BI dashboard to analyze retail sales and profitability across products, regions, and dates. Used Power Query for data preparation, DAX to create KPIs such as Total Sales, Total Profit, Profit Margin and Order Count, and SQL queries for regional, product-level and time-based analysis. The project demonstrates the end-to-end workflow of data preparation, analysis, KPI creation and dashboard visualization.
+## 📬 Contact
+
+**LinkedIn:**
+https://linkedin.com/in/nandan-r-010564224
+
+**GitHub:**
+https://github.com/NandanR75
+
+**Email:**
+[nandanr121995@gmail.com](mailto:nandanr121995@gmail.com)
 
 ---
 
-## 📊 Dataset
-| OrderID | Date       | Region | Product | Sales | Profit |
-| ------- | ---------- | ------ | ------- | ----: | -----: |
-| O001    | 2024-01-05 | North  | Laptop  | 75000 |  12000 |
-| O002    | 2024-01-08 | South  | Mobile  | 45000 |   9000 |
-| O003    | 2024-01-12 | East   | Tablet  | 30000 |   6000 |
-| O004    | 2024-01-15 | West   | Laptop  | 80000 |  15000 |
-| O005    | 2024-01-20 | North  | Mobile  | 50000 |  10000 |
-| O006    | 2024-01-25 | South  | Tablet  | 35000 |   7000 |
-
----
-## 🔑 Key Findings
-
-| Finding                            | Details                                                                         | Business Interpretation                                                          |
-| ---------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **Total Sales**                    | **₹3,15,000** across 6 orders                                                   | Represents the total revenue generated in the sample dataset                     |
-| **Total Profit**                   | **₹59,000**                                                                     | Indicates the total profit generated from the sales                              |
-| **Overall Profit Margin**          | **18.73%**                                                                      | For every ₹100 of sales, approximately ₹18.73 was profit                         |
-| **Top Region by Sales**            | **North – ₹1,25,000**                                                           | North contributed the highest sales among the regions                            |
-| **Top Region by Profit**           | **North – ₹22,000**                                                             | North also generated the highest absolute profit                                 |
-| **Highest Regional Profit Margin** | **South & East – 20%**                                                          | These regions had the strongest profitability relative to their sales            |
-| **Top Product by Sales**           | **Laptop – ₹1,55,000**                                                          | Laptop generated the highest revenue                                             |
-| **Top Product by Profit**          | **Laptop – ₹27,000**                                                            | Laptop also generated the highest absolute profit                                |
-| **Mobile Performance**             | **₹95,000 sales; ₹19,000 profit**                                               | Mobile was the second-highest product by sales and profit                        |
-| **Tablet Performance**             | **₹65,000 sales; ₹13,000 profit**                                               | Tablet had the lowest sales and profit among the three products                  |
-| **Orders**                         | **6 unique orders**                                                             | The analysis is based on a small sample dataset                                  |
-
-
-| **Key Business Insight**           | North had the highest sales/profit, while South and East had the highest margin | High sales volume and high profitability percentage are not necessarily the same |
-
----
-
-## 🛠️ Tech Stack
-| Technology       | Purpose                                                     |
-| ---------------- | ----------------------------------------------------------- |
-| **Power BI**     | Dashboard creation, visualization and interactive reporting |
-| **Power Query**  | Data cleaning, transformation and preparation               |
-| **DAX**          | KPI and calculated measure creation                         |
-| **SQL**          | Data querying, aggregation and analysis                     |
-| **CSV**          | Source dataset                                              |
-| **Git & GitHub** | Project version control and portfolio hosting               |
-
-
-# 🛒 Project 4: hr-analytics
-
-Analyzed 1,480 employee records to identify key factors associated with employee attrition. Used Python for data preprocessing, EDA and statistical testing, SQL for 20 analytical queries covering workforce, demographics, compensation, work patterns and satisfaction, and Power BI/DAX to build an interactive HR dashboard. Key findings included higher attrition among sales representatives, overtime employees, younger employees and entry-level employees, along with significant differences in compensation and satisfaction between employees who left and those who stayed.
-
-## 📊 Dataset
-| Column                      | Type             | Description                              |
-| --------------------------- | ---------------- | ---------------------------------------- |
-| **Attrition**               | String           | Whether the employee left: Yes/No        |
-| **Age / AgeGroup**          | Integer / String | Employee age and age category            |
-| **Department**              | String           | Sales, R&D, HR                           |
-| **JobRole**                 | String           | Employee's job role                      |
-| **MonthlyIncome**           | Integer          | Monthly salary                           |
-| **SalarySlab**              | String           | Salary range                             |
-| **JobSatisfaction**         | Integer          | Satisfaction level from 1–4              |
-| **EnvironmentSatisfaction** | Integer          | Workplace environment satisfaction, 1–4  |
-| **WorkLifeBalance**         | Integer          | Work-life balance rating, 1–4            |
-| **OverTime**                | String           | Whether employee works overtime          |
-| **BusinessTravel**          | String           | Travel frequency                         |
-| **YearsAtCompany**          | Integer          | Years employee has worked at the company |
-| **JobLevel**                | Integer          | Employee level, 1–5                      |
-| **MaritalStatus**           | String           | Single, Married or Divorced              |
-
-## 🔑 Key Findings
-| Finding                            |           Result | Interpretation                                                  |
-| ---------------------------------- | ---------------: | --------------------------------------------------------------- |
-| **Overall Attrition**              |        **16.1%** | 238 of 1,480 employees left                                     |
-| **Sales Representative Attrition** |        **39.3%** | Highest attrition among the roles analyzed                      |
-| **Overtime Attrition**             |        **30.6%** | Much higher than the 10.4% rate among non-overtime employees    |
-| **Age 18–25 Attrition**            |        **35.8%** | More than one-third of employees in this group left             |
-| **Salary Difference**              | **$2,016/month** | Employees who left earned $4,813 vs $6,829 for those who stayed |
-| **Job Level 1 Attrition**          |        **26.2%** | Entry-level employees showed elevated attrition                 |
-| **Single Employees**               |        **25.4%** | Higher attrition than divorced employees at 10.4%               |
-| **Job Involvement**                | Strong predictor | Lower involvement was strongly associated with attrition        |
-
-## 🛠️ Tech Stack
-| Technology            | Purpose                                          |
-| --------------------- | ------------------------------------------------ |
-| **Python**            | Data preprocessing and exploratory data analysis |
-| **Pandas**            | Data manipulation and cleaning                   |
-| **Matplotlib**        | Data visualization                               |
-| **Seaborn**           | Statistical/data visualization                   |
-| **SciPy**             | Statistical hypothesis testing                   |
-| **SQL**               | HR analytics and business queries                |
-| **DuckDB / MySQL 8+** | SQL execution                                    |
-| **Power BI**          | Interactive dashboard                            |
-| **DAX**               | Power BI calculations                            |
-| **Git/GitHub**        | Project version control and portfolio            |
-
-
-## 🚀 How to Run
-
-### Python EDA Notebook
-```bash
-pip install pandas matplotlib seaborn scipy jupyter
-cd Python_Scripts
-jupyter notebook EDA_analysis.ipynb
-```
-
-### Data Preprocessing
-```bash
-cd Python_Scripts
-python data_preprocessing.py
-# → creates Cleaned_Merged.csv in project root
-```
-
-### SQL Analysis — zero database setup required
-```bash
-pip install duckdb pandas
-cd SQL_Analytics
-
-python sql_runner.py                   # run all 20 queries
-python sql_runner.py --section 2       # Section 2: Profitability
-python sql_runner.py --section 5       # Section 5: Payment Mode
-python sql_runner.py --export          # save all results to sql_results/ as CSVs
-```
-
-### Power BI Dashboard
-Open `ecommerce.pbix` in Power BI Desktop. If prompted, update data source paths to your local `Orders.csv` and `Details.csv`.
-
----
-
-## 📈 SQL Coverage — 20 Queries across 7 Sections
-
-| Section | Queries | Topics |
-|---------|---------|--------|
-| 1. Executive KPIs | 2 | Business summary, loss exposure |
-| 2. Profitability | 3 | Sub-category margins, loss leaders, category mix |
-| 3. Time Series | 4 | Monthly/quarterly trends, MoM growth, seasonality index |
-| 4. Regional | 3 | State ranking, city AOV, top product per state |
-| 5. Payment Mode | 2 | Channel profitability, payment preference by category |
-| 6. Customer | 3 | Customer value ranking, repeat vs one-time, loss-making customers |
-| 7. Advanced | 3 | 3-month rolling average, order value bands, customer NTILE quartiles |
-
-**Window functions used:** `RANK()`, `RANK() OVER (PARTITION BY ...)`, `LAG()`, `NTILE(4)`, `AVG() OVER (ROWS BETWEEN ...)`, `SUM() OVER (ORDER BY ...)`
-
----
-
-## 📊 Statistical Tests
-
-| Test | Hypothesis | Result | p-value |
-|------|-----------|--------|---------|
-| Welch t-test | Credit Card profit > UPI profit per transaction | CC earns ₹67.5 more/item | 0.0002 ✅ |
-| One-way ANOVA | Category affects profit level | F = 5.14 | 0.006 ✅ |
-| Pearson correlation | Revenue predicts profit | r = 0.31 (weak positive) | <0.0001 ✅ |
-
----
-
-## 💡 Business Recommendations
-
-| Priority | Finding | Action |
-|----------|---------|--------|
-| 🔴 High | 35% of line items loss-making | Immediate pricing & supplier audit |
-| 🔴 High | Electronic Games & Furnishings net-negative | Reprice or discontinue these lines |
-| 🔴 High | Kurti (−11.9%) & Skirt (−16.2%) | Review return rates and supplier pricing |
-| 🟡 Medium | Credit Card: 14.5% vs UPI: 4.8% margin | Offer prepay cashback to migrate from COD/UPI |
-| 🟡 Medium | 68.2% of customers never return | Launch loyalty / re-engagement programme |
-| 🟡 Medium | Top revenue customer is loss-making | Track margin per customer, not just revenue |
-| 🟡 Medium | Shirts & T-shirts: ~20% margin, low volume | Increase catalogue depth and marketing |
-| 🟢 Low | Q3 overall loss-making | Reduce inventory build; run pre-July clearance |
-| 🟢 Low | Q1 = 36.8% of revenue | Pre-stock December; maximise Q1 ad spend |
-| 🟢 Low | Maharashtra + MP = 43% of revenue | Deepen range; reduce delivery SLAs in top 2 states |
-| 🟢 Low | Rajasthan: top-6 revenue, negative margin | Investigate local pricing or high-return product mix |
-| 🟢 Low | Kerala & Gujarat: highest margins, underinvested | Expand marketing in high-efficiency states |
-
-
----
-
-## 💼 Skills Demonstrated
-
-- SQL
-- Python
-- Power BI
-- Excel
-- Data Cleaning
-- Data Visualization
-- Dashboard Development
-- Exploratory Data Analysis
-- Business Analytics
-
-
-
-  ## ⭐ Thank You
-
-Thank you for visiting my Data Analyst Portfolio.
-
-If you found these projects useful, feel free to connect with me on LinkedIn.
-
-
-
-
+⭐ **Thank you for visiting my Data Analyst Portfolio.**
